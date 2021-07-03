@@ -1,0 +1,6 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import './_adminlte.scss';
+@import './_OverlayScrollbars.scss';
+@import './_main.scss';
