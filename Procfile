@@ -1,0 +1,1 @@
+web: java -jar path-to-my-project/target/my-project.jar
