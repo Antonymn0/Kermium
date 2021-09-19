@@ -1,1 +1,1 @@
-web: java -jar path-to-my-project/target/my-project.jar
+web: vendor/bin/heroku-php-apache2 public/"
