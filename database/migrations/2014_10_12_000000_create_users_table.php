@@ -44,7 +44,7 @@ class CreateUsersTable extends Migration
             $table->integer('suspended_by')->nullable()->index();
             $table->string('avatar')->nullable();
 
-            $table->string('remember_token', 100);            
+            $table->string('remember_token', 100)->nullable();            
             $table->timestamps();
         });
     }
