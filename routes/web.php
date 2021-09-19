@@ -15,10 +15,13 @@ use Inertia\Inertia;
 |
 */
 
+// prevent mixed content error in production
 if (App::environment('production')) {
     URL::forceScheme('https');
 }
 
+
+//home route
 Route::get('/', function () {
     return view('welcome');
 });

@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// prevent mixed content error in production
 if (App::environment('production')) {
     URL::forceScheme('https');
 }
