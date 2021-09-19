@@ -26,7 +26,7 @@ class UserFactory extends Factory
             'full_name'=> $this->faker-> name(),
             'first_name'=> $this->faker-> firstName(),
             'role'=> $this->faker-> jobTitle(),
-            'img'=> $this->faker-> url(),
+            'img'=> 'https://www.seekpng.com/ima/u2y3q8t4t4i1q8u2/',
             'middle_name'=> $this->faker-> firstName(),
             'last_name'=> $this->faker-> lastName(),
             'user_name'=> $this->faker->unique()->userName(),

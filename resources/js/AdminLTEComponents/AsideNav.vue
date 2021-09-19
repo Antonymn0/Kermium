@@ -2,12 +2,7 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="/" class="brand-link img-brand">
-      <img
-        class="elevation-3"
-        src="/img/logo.png"
-        alt="Acamium Plus"
-        style="opacity: 0.8"
-      />
+     <p>Kermium</p>
     </a>
 
     <!-- Sidebar -->

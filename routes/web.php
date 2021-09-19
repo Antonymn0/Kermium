@@ -21,7 +21,7 @@ if (App::environment('production')) {
 }
 
 
-//home route
+//home ro
 Route::get('/', function () {
     return view('welcome');
 });
