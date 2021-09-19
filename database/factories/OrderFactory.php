@@ -30,7 +30,7 @@ class OrderFactory extends Factory
              'paper_type'=> $this->faker->word(),
              'quantity'=> $this->faker->randomDigit(),
              'spacing'=> $this->faker->word(),
-             'status'=> $this->faker->randomElement(['complete', 'onHold', 'inProgress', 'revisions']),
+             'status'=> $this->faker->randomElement(['complete', 'onhold', 'inprogress', 'revisions']),
              'pages'=> $this->faker->randomDigit(),
              'words'=> $this->faker->randomDigit(),
              'academic_level'=> $this->faker->sentence(),
