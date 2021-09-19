@@ -49,7 +49,8 @@ class UserFactory extends Factory
             'approved_by'=> $this->faker-> randomDigit(),
             'registered_by'=> $this->faker->randomDigit() ,
             'suspended_by'=> $this->faker-> randomDigit(),
-            'avatar'=> $this->faker->word()                       
+            'avatar'=> $this->faker->word(),
+            'remember_token' =>$this->faker->bothify('??####?????###-??')                     
               ];
     }
 
