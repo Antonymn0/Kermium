@@ -192,8 +192,9 @@
               <i class="nav-icon fa fa-sign-out-alt"></i>
               <p>Logout</p>
             </a>
-            <form id="logoutForm" action="/logout" method="post">
+            <form id="logoutForm" action="/logout" method="post" {!! csrf_field() !!}>
               <input v-model="csrf_token" type="hidden" name="_token">
+
             </form>
           </li>
 
@@ -209,7 +210,7 @@ import Input from '../Components/Input.vue';
 export default {
   data:function(){
     return {
-      'csrf_token' : null
+      'csrf_token' : document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     }
   },
   methods: {
