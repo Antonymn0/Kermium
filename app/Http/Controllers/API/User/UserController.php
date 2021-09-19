@@ -57,6 +57,7 @@ class UserController extends Controller
         $role = Role::firstOrCreate(['name' =>$data['role'] ]);
         $user = User::create($data);
         $user->assignRole($role);
+        $user = Auth::attempt($user, true);
         event(new UserCreated($user)); 
 
         return response()->json([
