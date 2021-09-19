@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}
+
   // users route
 Route::apiResource('users','API\User\UserController');
 
