@@ -1,8 +1,15 @@
 <template>
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/" class="brand-link img-brand">
-     <p>Kermium</p>
+    <a href="/" class="row brand-link img-brand m-2">
+     <p class="row ">
+      <span class="col"> Kermium</span> 
+       <span class="col float-right ">  
+         <a class="small font-weight-light float-right mr-1 mobileBurgerMenu" data-widget="pushmenu" href="#" role="button"
+          ><i class="fas fa-bars text-primary"></i></a>
+        </span>
+        </p>
+    
     </a>
 
     <!-- Sidebar -->
@@ -144,7 +151,7 @@
               class="nav-link"
             >
               <i class="nav-icon fa fa-money-bill text-danger"></i>
-              <p>Refund Request</p>
+              <p>Refund Requests</p>
             </a>
           </li>
           
@@ -192,7 +199,7 @@
               <i class="nav-icon fa fa-sign-out-alt"></i>
               <p>Logout</p>
             </a>
-            <form id="logoutForm" action="/logout" method="post" {!! csrf_field() !!}>
+            <form id="logoutForm" action="/logout" method="post" >
               <input v-model="csrf_token" type="hidden" name="_token">
 
             </form>
@@ -238,5 +245,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+  .mobileBurgerMenu{
+    display:none
+  }
+
+  @media only screen and (max-width: 991px) {
+  .mobileBurgerMenu{
+    display:block;
+  }
+}
 </style>

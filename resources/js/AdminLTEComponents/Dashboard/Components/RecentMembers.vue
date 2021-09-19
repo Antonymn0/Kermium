@@ -34,14 +34,34 @@
 
       </ul>
     </div>
-    <div class="card-footer text-center">
-      <inertia-link href="/dashboard/members" class="uppercase">View All Members</inertia-link>
+    <div class="card-footer text-center" v-if="! can('view users')">
+      <inertia-link href="/dashboard/users" class="uppercase">View All Members</inertia-link>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+
+   methods: {
+    can: function (permission) {
+      let possible = false;
+      let permissions = this.$page.props.authUserPermissions;
+      
+      if( ! permissions )
+        return false;
+
+      for (let i = 0; i < permissions.length; i++) {
+        if (permissions[i].name.toLowerCase() == permission.toLowerCase()) {
+          possible = true;
+          break;
+        }
+      }
+
+      return possible;
+    },
+  },
+};
 </script>
 
 <style>

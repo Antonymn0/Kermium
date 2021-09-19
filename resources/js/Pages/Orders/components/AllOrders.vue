@@ -9,9 +9,8 @@
           <h2 class="ml-5 p-1"> {{ title }}</h2>
           <inertia-link href="/dashboard/orders/create" class="btn btn-primary m-2"> <i class="fa fa-plus p-1"> </i></inertia-link>  
         </div>
-        
-        <div class="container">
-            <table class="table    table-bordered  table-hover">
+        <div class=" table-responsive">
+            <table class="table table-bordered table-sm table-hover w-auto">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">#</th>
@@ -32,7 +31,7 @@
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody> 
+                <tbody > 
                     <tr  v-for="(order, index) in orders.data" :key="order.id">                
                         <td> <div class="t-cell"> {{ index +1}} </div>  </td>
                         <td> <div class="t-cell"> {{ order.topic }}  </div> </td>
@@ -108,11 +107,12 @@ export default {
 </script>
 
 <style scoped>
- .table tr td .t-cell {
-    height: 3.3em;
-    z-index: -5;
-    overflow: hidden;
-  }
+ .table{
+   display: block !important;
+   overflow-x: auto !important;
+   width: 100% !important;
+   display: block
+ }
 </style>
 
 
