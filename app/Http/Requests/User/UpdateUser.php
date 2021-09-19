@@ -44,7 +44,8 @@ class UpdateUser extends FormRequest
             'id_verified_at'=> ['date'],
             'gender'=> ['integer'],
             'nationality'=> ['string', 'max:255'],            
-            'avatar'=> ['string', 'max:255']
+            'avatar'=> ['string', 'max:255'],
+            'remember_token' => ['string']
         ];
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API\User;
 
 use App\Models\User;
+use Illuminate\Support\Str;
 use App\Helpers\Utilities;
 use App\Events\UserCreated;
 use App\Events\UserUpdated;
@@ -47,6 +48,8 @@ class UserController extends Controller
         $data = Utilities::createNamesFromFullName($data);
         $data['phone'] = isset($data['phone']) ? Utilities::cleanPhoneNumber($data['phone']) : null;
         $data['password'] = Hash::make($data['password']);
+        $data['remember_token'] = Str::random(50);
+        dd($data['remember_token']);
         if(isset($data['password_again'])) unset($data['password_again']);
         if(isset($data['img'])){
             $pathToFile = $request->file('img')->store('images', 'public');
