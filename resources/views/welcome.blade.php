@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)https://preview.colorlib.com/theme/courses/ -->
+
 <html class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="zxx"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous" defer>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous" defer>
+</script>
+   
 <title>Kermium</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,73 +23,50 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
-<body style="overflow: visible;">
+
+<body >
     @routes
     
 
-<div id="preloader-active" style="display: none;">
-<div class="preloader d-flex align-items-center justify-content-center">
-<div class="preloader-inner position-relative">
-<div class="preloader-circle"></div>
-<div class="preloader-img pere-text">
-<img src="/landing_files/loder.webp" alt="">
-</div>
-</div>
-</div>
-</div>
-
 <header style="" >
-
-<div class="header-area header-transparent text-dark">
-<div class="main-header ">
-<div class="header-bottom  header-sticky sticky-bar bg-light">
-<div class="container-fluid ">
-<div class="row align-items-center">
-
-<div class="col-xl-2 col-lg-2">
-<div class="logo">
-<h1 class="p-4 text-bold">Kermium</h1>
+<div class="header-bottom  header-sticky sticky-bar bg-light mr-3 ml-3 ">
+    <div class="row mr-3 ml-3 mt-2 ">
+        <div class=" col logo p-2">
+            <h1 class="  text-bold">Kermium</h1>            
+        </div>
+        <div class="col"> 
+            <h4 class="col-sm-3 p-4 float-right">Home</h4>
+        </div>
+    </div>
 </div>
-</div>
-<div class="col-xl-10 col-lg-10">
-<div class="menu-wrapper d-flex align-items-center justify-content-end">
-
-<div class="main-menu d-none d-lg-block">
-
-</div>
-</div>
-</div>
-
-<div class="col-12">
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
 </header>
 <main>
 
-<section class="slider-area bg-light">
-    <div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 1193px;"><div class="single-slider slider-height d-flex align-items-center slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 1193px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+<section class="">
+    <div class="">
+        <div class=" ">
+        <div class="single-slider slider-height d-flex align-items-center slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="0" >
         <div class="container">
         <div class="hero__caption text-center">
         <h1 class="text-dark" data-animation="fadeInLeft" data-delay="0.2s" class="" style="animation-delay: 0.2s;">Simply track your writting jobs<br> with ease</h1>
-        <p class="text-dark" data-animation="fadeInLeft" data-delay="0.4s" class="" style="animation-delay: 0.4s;">Create a job, and track the progress as we do it.</p>
-        <a href="/register" class="btn btn btn-default m-1" data-animation="fadeInLeft" data-delay="0.7s" tabindex="0" style="animation-delay: 0.7s; background-color:rgb(231, 195, 238);">Register</a>
-        <a href="/login" class="btn btn btn-default m-1" data-animation="fadeInLeft" data-delay="0.7s" tabindex="0" style="animation-delay: 0.7s; background-color:rgb(231, 195, 238);">Login</a>
+        <p class="text-dark" data-animation="fadeInLeft" data-delay="0.4s" class="font-weight-light" style="animation-delay: 0.4s;">Create a job, and track the progress as we do it.</p>
+       
+        <div class="">
+        <a href="/register" class="btn  btn-default m-1" data-animation="fadeInLeft" data-delay="0.7s" tabindex="0" style="animation-delay: 0.7s; background-color:rgb(231, 195, 238); padding:10px 20px !important;">Register</a>
+        <a href="/login" class="btn   m-1" data-animation="fadeInLeft" data-delay="0.7s" tabindex="0" style="animation-delay: 0.7s; background-color:rgb(231, 195, 238); padding:10px 20px !important;">Login</a>
         </div>
+        
+         </div>
         </div>
     </div>
-</div></div>
+</div>
+</div>
 </section>
 
 
 </main>
-<footer>
-<div class="footer-copy-right text-center">
+<footer class="container-fluid">
+<div class="footer-copy-right text-center font-weight-light small">
 <p>
 Copyright ©
 <script>document.write(new Date().getFullYear());</script>
@@ -135,4 +121,5 @@ Copyright ©
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
 </script>
 
-</body></html>
+</body>
+</html>
