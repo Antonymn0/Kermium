@@ -43,7 +43,8 @@ class CreateUsersTable extends Migration
             $table->integer('registered_by')->nullable()->index();
             $table->integer('suspended_by')->nullable()->index();
             $table->string('avatar')->nullable();
-            
+
+            $table->string('remember_token', 100);            
             $table->timestamps();
         });
     }
