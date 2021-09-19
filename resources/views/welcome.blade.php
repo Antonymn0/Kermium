@@ -69,7 +69,8 @@
         <div class="hero__caption text-center">
         <h1 class="text-dark" data-animation="fadeInLeft" data-delay="0.2s" class="" style="animation-delay: 0.2s;">Simply track your writting jobs<br> with ease</h1>
         <p class="text-dark" data-animation="fadeInLeft" data-delay="0.4s" class="" style="animation-delay: 0.4s;">Create a job, and track the progress as we do it.</p>
-        <a href="/register" class="btn btn btn-default" data-animation="fadeInLeft" data-delay="0.7s" tabindex="0" style="animation-delay: 0.7s; background-color:rgb(231, 195, 238);">Register</a>
+        <a href="/register" class="btn btn btn-default m-1" data-animation="fadeInLeft" data-delay="0.7s" tabindex="0" style="animation-delay: 0.7s; background-color:rgb(231, 195, 238);">Register</a>
+        <a href="/login" class="btn btn btn-default m-1" data-animation="fadeInLeft" data-delay="0.7s" tabindex="0" style="animation-delay: 0.7s; background-color:rgb(231, 195, 238);">Login</a>
         </div>
         </div>
     </div>
