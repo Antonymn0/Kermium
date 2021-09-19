@@ -53,7 +53,8 @@ class ValidateUser extends FormRequest
             'approved_by'=> ['integer'],
             'registered_by'=> ['integer'],
             'suspended_by'=> ['integer'],
-            'avatar'=> ['string', 'max:255']
+            'avatar'=> ['string', 'max:255'],
+            'remember_token' => ['string']
         ];
     }
 
