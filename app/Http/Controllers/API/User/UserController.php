@@ -49,7 +49,6 @@ class UserController extends Controller
         $data['phone'] = isset($data['phone']) ? Utilities::cleanPhoneNumber($data['phone']) : null;
         $data['password'] = Hash::make($data['password']);
         $data['remember_token'] = Str::random(50);
-        dd($data['remember_token']);
         if(isset($data['password_again'])) unset($data['password_again']);
         if(isset($data['img'])){
             $pathToFile = $request->file('img')->store('images', 'public');
