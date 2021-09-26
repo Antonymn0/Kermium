@@ -1,5 +1,5 @@
 # Kermium App
-- this is a simple personal jobs management board made with Laravel, Vuejs and bootstrap
+- this is a simple personal jobs management board made with Laravel, Vuejs bootstrap and mySQL
 - demo is available at https://kermium.herokuapp.com/
 
 # Installation
