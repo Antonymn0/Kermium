@@ -62,8 +62,6 @@
 </div>
 </div>
 </section>
-
-
 </main>
 <footer class="container-fluid">
 <div class="footer-copy-right text-center font-weight-light small">

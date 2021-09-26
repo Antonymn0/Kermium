@@ -9,10 +9,11 @@
           <h2 class="ml-5 p-1"> {{ title }}</h2>
           <inertia-link href="/dashboard/orders/create" class="btn btn-primary m-2"> <i class="fa fa-plus p-1"> </i></inertia-link>  
         </div>
+        
         <div class=" table-responsive">
             <table class="table table-bordered table-sm table-hover w-auto">
                 <thead class="thead-dark">
-                    <tr>
+                    
                         <th scope="col">#</th>
                         <th scope="col">Topic</th>
                         <th scope="col">Type</th>
@@ -29,7 +30,7 @@
                         <th scope="col">No of sources</th>
                         <th scope="col">Sample files</th>
                         <th scope="col">Action</th>
-                    </tr>
+                    
                 </thead>
                 <tbody > 
                     <tr  v-for="(order, index) in orders.data" :key="order.id">                
